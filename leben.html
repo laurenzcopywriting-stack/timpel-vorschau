@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leben · Ingrid und Wolfgang Timpel</title>
+  <meta name="description" content="Ingrid Timpel, geboren in Neubrandenburg, zu Hause in Weimar: ihr Lebensbericht, Kapitel für Kapitel.">
+  <meta name="theme-color" content="#EFE6D8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="vendor/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/sentient-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    document.documentElement.classList.add('js');
+    // Einladungs- und Passwort-Links aus Netlify Identity führen in den Editor
+    if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) location.replace('/admin/' + location.hash);
+  </script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <!-- Zierleiste im Stil der Weimarer Klassik: Linie, Rosette, Linie -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="zier" viewBox="0 0 160 16">
+      <path d="M0 8H62M98 8H160" fill="none" stroke="currentColor" stroke-width="1"/>
+      <g fill="currentColor" transform="translate(80 8)">
+        <ellipse rx="2.6" ry="6.4"/><ellipse rx="2.6" ry="6.4" transform="rotate(90)"/>
+        <ellipse rx="1.7" ry="4.6" transform="rotate(45)"/><ellipse rx="1.7" ry="4.6" transform="rotate(-45)"/>
+      </g>
+      <circle cx="70" cy="8" r="1.4" fill="currentColor"/><circle cx="90" cy="8" r="1.4" fill="currentColor"/>
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-head">
+    <a class="wordmark" translate="no" href="index.html" aria-label="Ingrid und Wolfgang Timpel, zur Startseite">Ingrid &amp; Wolfgang Timpel</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue">Menü</button>
+    <nav class="site-nav" id="hauptmenue" aria-label="Hauptmenü">
+      <ul>
+        <li><a href="leben.html">Leben</a></li>
+        <li><a href="texte.html">Texte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="aktuelles.html">Aktuelles</a></li>
+        <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+      </ul>
+      <a class="btn" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-hero grid" aria-labelledby="titel">
+      <h1 id="titel" data-reveal="self">Ingrid Timpel</h1>
+      <p class="page-hero__sub" data-reveal="self">Geboren in Neubrandenburg, zu Hause in Weimar. Hier steht ihr Lebensbericht, Kapitel für Kapitel.</p>
+      <nav class="subnav" data-reveal="self" aria-label="Auf dieser Seite">
+        <ul>
+          <li><a href="#bericht">Lebensbericht</a></li>
+          <li><a href="#stationen">Stationen</a></li>
+        </ul>
+      </nav>
+      <figure class="medaillon medaillon--rose page-hero__medaillon" data-reveal="self">
+        <div class="medaillon__rahmen"><div class="medaillon__oval"><img src="img/uploads/portraet-ingrid-medaillon.jpg" width="800" height="1000" alt="Ingrid Timpel, lächelnd, mit Stirnband und Halskette"></div></div>
+        <figcaption>Ingrid Timpel</figcaption>
+      </figure>
+      <figure class="page-hero__photo" data-drift="0.06">
+        <div class="frame"><img src="img/treptower-tor.webp" width="1600" height="1000" fetchpriority="high" alt="Postkarte von 1922: das Treptower Tor in Neubrandenburg zwischen alten Bäumen"></div>
+        <figcaption>Neubrandenburg, Treptower Tor, Postkarte 1922</figcaption>
+      </figure>
+    </section>
+
+    <section class="reading grid field-rose mt-section" id="bericht" aria-labelledby="bericht-titel">
+      <div class="reading__aside">
+        <div class="sticky" data-reveal>
+          <h2 id="bericht-titel">Lebensbericht</h2>
+          <p>Ingrid Timpel schreibt ihren Bericht seit Jahren fort. Neue Kapitel erscheinen hier, sobald sie fertig sind.</p>
+          <ul class="chapters">
+            <li><a href="#01-neutorstrasse-32">Neutorstraße 32</a><span>Kindheit in Neubrandenburg</span></li>
+            <li><a href="#02-der-29-april-1945">Der 29. April 1945</a><span>Der Tag der Flucht</span></li>
+            <li><a href="#03-im-offenen-gueterwagen">Im offenen Güterwagen</a><span>Über Güstrow nach Lübeck</span></li>
+            <li><a href="#04-ankunft-in-weimar">Ankunft in Weimar</a><span>folgt</span></li>
+            <li><a href="#05-mit-wolfgang">Mit Wolfgang</a><span>folgt</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="reading__main">
+        <article id="01-neutorstrasse-32" data-reveal>
+          <h3>Neutorstraße 32</h3>
+          <div class="prose prose--initial"><p>Am 28. August 1749, mittags mit dem Glockenschlage zwölf, kam ich in Frankfurt am Main auf die Welt. Die Konstellation war glücklich; die Sonne stand im Zeichen der Jungfrau und kulminierte für den Tag; Jupiter und Venus blickten sie freundlich an, Merkur nicht widerwärtig; Saturn und Mars verhielten sich gleichgültig: nur der Mond, der soeben voll ward, übte die Kraft seines Gegenscheins um so mehr, als zugleich seine Planetenstunde eingetreten war.</p>
+<p>Er widersetzte sich daher meiner Geburt, die nicht eher erfolgen konnte, als bis diese Stunde vorübergegangen. Diese guten Aspekten, welche mir die Astrologen in der Folgezeit sehr hoch anzurechnen wußten, mögen wohl Ursache an meiner Erhaltung gewesen sein.</p>
+</div>
+          <p class="note-box"><mark class="offen">Satzprobe</mark> So wird ein Kapitel gesetzt: mit großer Initiale, ruhiger Zeile und Platz am Rand. Der Text stammt aus Goethes „Dichtung und Wahrheit“ und wird durch Ihr erstes Kapitel ersetzt.</p>
+        </article>
+        <article id="02-der-29-april-1945" data-reveal>
+          <h3>Der 29. April 1945</h3>
+          <p><mark class="offen">Kapitel folgt</mark></p>
+        </article>
+        <article id="03-im-offenen-gueterwagen" data-reveal>
+          <h3>Im offenen Güterwagen</h3>
+          <p><mark class="offen">Kapitel folgt</mark></p>
+        </article>
+        <article id="04-ankunft-in-weimar" data-reveal>
+          <h3>Ankunft in Weimar</h3>
+          <p><mark class="offen">Kapitel folgt</mark></p>
+        </article>
+        <article id="05-mit-wolfgang" data-reveal>
+          <h3>Mit Wolfgang</h3>
+          <p><mark class="offen">Kapitel folgt</mark></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="album-wall pt-section" id="stationen" aria-labelledby="stationen-titel">
+      <div class="pair pair--a">
+        <figure class="r-3x4 w70" data-reveal>
+          <div class="frame"><img src="img/neues-tor-karte.webp" width="1000" height="1333" loading="lazy" alt="Postkarte um 1900: das Neue Tor in Neubrandenburg mit Straße und Fachwerkhaus"></div>
+          <figcaption>Neubrandenburg: das Neue Tor, nach dem die Neutorstraße heißt. Postkarte um 1900</figcaption>
+        </figure>
+        <div class="stack-lower w84" data-reveal>
+          <div class="album-wall__head">
+            <h2 id="stationen-titel">Stationen</h2>
+            <p>Neubrandenburg, Güstrow, Lübeck, Weimar: die Orte des Lebensberichts, so wie sie auf alten Postkarten aussehen.</p>
+          </div>
+          <figure class="r-5x4">
+            <div class="frame"><img src="img/guestrow.webp" width="1100" height="879" loading="lazy" alt="Postkarte um 1900: Güstrow mit dem Dom hinter einem Teich"></div>
+            <figcaption>Güstrow, Postkarte um 1900</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="pair pair--a2">
+        <figure class="r-3x4 w84" data-reveal>
+          <div class="frame"><img src="img/holstentor.webp" width="1000" height="1334" loading="lazy" alt="Farbige Ansicht um 1895: das Holstentor in Lübeck"></div>
+          <figcaption>Lübeck, Holstentor, um 1895</figcaption>
+        </figure>
+        <figure class="r-5x4 w70" data-reveal>
+          <div class="frame"><img src="img/schillerhaus.webp" width="1100" height="880" loading="lazy" alt="Farbige Ansicht um 1900: Schillers Wohnhaus in Weimar mit Brunnen davor"></div>
+          <figcaption>Weimar, Schillerhaus, um 1900</figcaption>
+        </figure>
+      </div>
+    </section>
+  
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot__bg" data-zoom><img src="img/roemisches-haus.webp" width="2400" height="1591" loading="lazy" alt="Kolorierte Ansicht von 1799: das Römische Haus im Park an der Ilm in Weimar"></div>
+    <div class="site-foot__top">
+      <nav aria-label="Seiten">
+        <ul>
+          <li><a href="leben.html">Leben</a></li>
+          <li><a href="texte.html">Texte</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="site-foot__contact">
+        <p>Ingrid Timpel, Weimar</p>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="bildnachweis.html">Bildnachweis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p class="site-foot__name" translate="no" aria-hidden="true">Timpel</p>
+      <p class="site-foot__legal">© 2026 Ingrid Timpel. Im Bild: das Römische Haus im Park an der Ilm, 1799.</p>
+    </div>
+  </footer>
+</body>
+</html>

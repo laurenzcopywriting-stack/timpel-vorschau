@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingrid und Wolfgang Timpel · Weimar</title>
+  <meta name="description" content="Lebensbericht, Gedichte und Fotografien einer Weimarer Familie, aufgeschrieben von Ingrid Timpel. Dazu Leben und Schriften des Archäologen Wolfgang Timpel (1935–2024).">
+  <meta name="theme-color" content="#EFE6D8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="vendor/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/sentient-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    document.documentElement.classList.add('js');
+    // Einladungs- und Passwort-Links aus Netlify Identity führen in den Editor
+    if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) location.replace('/admin/' + location.hash);
+  </script>
+  <script src="js/site.js" defer></script>
+  <script src="js/puzzle.js" defer></script>
+</head>
+<body>
+  <!-- Zierleiste im Stil der Weimarer Klassik: Linie, Rosette, Linie -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="zier" viewBox="0 0 160 16">
+      <path d="M0 8H62M98 8H160" fill="none" stroke="currentColor" stroke-width="1"/>
+      <g fill="currentColor" transform="translate(80 8)">
+        <ellipse rx="2.6" ry="6.4"/><ellipse rx="2.6" ry="6.4" transform="rotate(90)"/>
+        <ellipse rx="1.7" ry="4.6" transform="rotate(45)"/><ellipse rx="1.7" ry="4.6" transform="rotate(-45)"/>
+      </g>
+      <circle cx="70" cy="8" r="1.4" fill="currentColor"/><circle cx="90" cy="8" r="1.4" fill="currentColor"/>
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-head">
+    <a class="wordmark" translate="no" href="index.html" aria-label="Ingrid und Wolfgang Timpel, zur Startseite">Ingrid &amp; Wolfgang Timpel</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue">Menü</button>
+    <nav class="site-nav" id="hauptmenue" aria-label="Hauptmenü">
+      <ul>
+        <li><a href="leben.html">Leben</a></li>
+        <li><a href="texte.html">Texte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="aktuelles.html">Aktuelles</a></li>
+        <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+      </ul>
+      <a class="btn" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <!-- Drei Abzüge an einer Leiste: Neubrandenburg, das Puzzle, Weimar -->
+    <section class="hero grid" aria-labelledby="titel">
+      <figure class="print print--square hero__square" data-drift="0.05">
+        <div class="frame"><img src="img/englische-rose.webp" width="1200" height="843" alt="Rosa Englische Rose ‚Gertrude Jekyll‘ vor einer Backsteinmauer"></div>
+      </figure>
+
+      <div class="hero__text" data-drift="-0.06">
+        <h1 id="titel">Ingrid und Wolfgang Timpel</h1>
+        <svg class="zier" aria-hidden="true" focusable="false"><use href="#zier"></use></svg>
+        <p>Lebensbericht, Gedichte und Fotografien einer Weimarer Familie, aufgeschrieben von Ingrid Timpel.</p>
+        <a class="more" href="leben.html">Den Lebensbericht lesen</a>
+      </div>
+
+      <figure class="puzzle hero__tall" data-puzzle data-cols="5" data-rows="6">
+        <div class="puzzle__stage">
+          <div class="puzzle__tilt">
+            <img src="img/puzzle-rose.webp" width="1200" height="1601" fetchpriority="high" alt="Zweig einer blassrosa Wildrose mit zwei offenen Blüten, Kupferstich aus Redoutés „Les Roses“, 1817">
+          </div>
+        </div>
+        <figcaption>Rose aus Redoutés „Les Roses“, 1817.</figcaption>
+      </figure>
+
+      <figure class="print print--wide hero__wide" data-drift="0.09">
+        <div class="frame"><img src="img/uploads/img-6493.jpg" width="2000" height="1500" fetchpriority="high" alt="Ingrid Timpel, lächelnd, mit Stirnband, roter Weste und Halskette"></div>
+        <figcaption>Ingrid Timpel</figcaption>
+      </figure>
+    </section>
+
+    <!-- Überschrift über dem Panorama -->
+    <section class="intro" aria-labelledby="garten">
+      <div data-reveal>
+        <h2 id="garten">Ein Garten aus Erinnerungen</h2>
+      </div>
+      <div class="intro__notes" data-reveal>
+        <p>Ingrid Timpel schreibt seit vielen Jahren auf, was sie erlebt: Tag für Tag, in Versen und in einem Bericht über ihr Leben.</p>
+        <p>Wolfgang Timpel war Restaurator und Archäologe in Weimar. Er setzte zusammen, was in Scherben aus der Erde kam.</p>
+      </div>
+      <figure class="panorama">
+        <div class="frame" data-shutter><img src="img/plan-ilm.webp" width="2400" height="1028" loading="lazy" alt="Ausschnitt aus dem Stadtplan von Weimar, 1784: die Ilm schlängelt sich durch Wiesen und Gärten am Rand der Stadt"></div>
+        <figcaption>Weimar im Stadtplan von Franz Ludwig Güssefeld, 1784. Unten windet sich die Ilm durch Wiesen und Gärten, aus denen der Park an der Ilm wurde.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Ingrid: breites Bild, Farbkachel, Fakten -->
+    <section class="ingrid section field-rose" aria-labelledby="ingrid">
+      <div class="grid" data-reveal>
+        <h2 id="ingrid">Ingrid Timpel</h2>
+        <p class="lead initial">Geboren in Neubrandenburg, zu Hause in Weimar. Ingrid Timpel hält fest, was sie erlebt hat, damit es nicht verloren geht: in Tagesnotizen, in Gedichten und in einem langen Bericht über ihr Leben.</p>
+      </div>
+      <div class="grid">
+        <div class="mosaic" data-reveal>
+          <figure class="mosaic__photo">
+            <div class="frame"><img src="img/ingrid-neutorstrasse.webp" width="1500" height="938" loading="lazy" alt="Ingrid Timpel mit Wanderstöcken vor einem gelben Eckhaus, darüber das Straßenschild Neutorstraße"></div>
+            <p class="mosaic__note mosaic__note--unten">Im Frühjahr 1945 flieht sie als Kind mit der Mutter und den Geschwistern aus Neubrandenburg, im offenen Güterwagen über Güstrow bis nach Lübeck. Davon erzählt ihr Lebensbericht.</p>
+            <figcaption>Ingrid Timpel an der Neutorstraße</figcaption>
+          </figure>
+          <div class="mosaic__side">
+            <div class="map-tile">
+              <svg viewBox="-14 0 245 300" role="img" aria-label="Karte von Deutschland: Neubrandenburg, Güstrow und Lübeck im Norden, Weimar in der Mitte">
+                <path class="land" d="M61.2,0.5 59.9,3.4 60.2,5.9 61.7,6.9 71.0,5.4 80.9,7.7 82.3,9.8 85.4,8.3 86.0,10.3 90.3,7.0 90.1,8.7 95.9,11.6 98.6,10.6 100.5,14.8 99.2,13.7 100.5,14.9 100.3,19.5 95.8,22.7 104.5,23.1 102.8,28.7 105.2,24.8 107.3,23.9 116.7,29.0 122.1,26.0 126.9,25.7 125.2,27.1 126.1,33.1 117.9,38.6 121.2,42.4 128.1,40.1 130.0,41.3 130.0,43.2 131.9,42.3 134.8,44.5 135.5,41.9 132.9,40.8 135.7,39.8 135.6,41.9 138.9,37.3 136.5,37.9 140.3,34.8 150.1,33.6 150.9,34.9 156.1,29.2 160.5,22.0 171.2,23.8 164.4,25.0 164.3,26.4 166.9,25.4 167.5,27.4 172.6,23.8 174.3,26.6 174.6,29.8 179.0,31.6 180.4,33.8 182.1,34.0 181.3,35.2 183.1,37.2 188.9,34.1 191.6,36.7 190.0,39.6 194.1,43.7 192.0,45.9 194.7,44.2 193.9,41.1 195.4,41.1 195.2,43.2 197.2,42.9 197.4,40.8 196.3,39.3 201.6,43.4 201.5,45.9 191.5,46.2 197.2,50.1 203.1,50.8 201.4,52.2 202.8,52.3 204.1,55.4 203.5,58.3 207.1,69.2 205.4,71.4 204.6,77.2 199.7,80.7 199.1,85.4 211.6,95.4 210.7,97.2 211.5,98.5 209.0,102.5 210.0,106.6 213.1,108.5 212.4,113.1 214.1,114.9 213.2,120.0 210.4,124.6 214.1,130.6 213.1,134.8 218.8,137.7 219.6,142.6 221.1,144.4 218.7,156.6 215.7,162.9 213.4,163.0 211.0,161.9 212.0,158.9 209.7,159.2 210.6,156.7 208.3,154.3 205.8,156.0 203.3,154.2 202.2,157.3 205.9,158.5 205.2,160.6 195.1,163.9 192.6,167.1 185.3,167.3 183.3,171.8 181.1,170.0 180.0,172.4 178.1,172.0 176.8,175.5 172.9,175.2 171.5,178.9 167.9,177.1 165.0,179.5 160.4,179.4 156.7,184.2 155.8,187.9 152.6,182.4 150.0,185.0 152.7,187.3 152.7,190.5 154.1,192.4 161.2,197.6 159.3,202.9 157.7,204.2 160.7,206.8 162.1,212.4 163.5,212.9 163.9,216.7 166.9,219.8 172.9,221.5 176.4,227.8 181.8,231.3 181.8,234.0 187.3,235.2 192.3,242.0 191.1,244.1 191.6,249.1 189.5,252.0 184.2,248.9 182.6,250.1 182.0,257.3 179.0,260.1 168.9,264.0 166.1,267.4 172.1,277.6 169.9,282.2 173.1,282.6 174.6,285.8 172.4,292.5 167.2,288.8 167.9,286.7 166.8,284.4 162.6,284.2 160.2,286.2 158.5,283.4 154.2,284.3 154.1,281.9 152.1,283.5 153.0,287.2 139.2,287.3 137.8,290.7 134.4,290.6 133.2,292.2 130.4,295.3 129.7,293.6 123.3,295.1 122.0,292.0 120.5,292.0 121.8,290.5 118.3,290.5 114.1,288.3 113.2,289.8 110.1,287.8 111.0,293.7 110.1,295.8 103.8,300.0 105.1,295.3 102.0,296.7 101.8,292.8 99.6,291.7 99.0,289.2 96.6,290.0 94.2,287.4 92.1,289.4 76.6,278.7 80.9,284.7 79.5,285.2 75.3,281.6 75.7,283.6 72.9,285.2 70.9,281.8 70.6,284.2 68.9,283.6 69.0,280.9 65.1,279.0 61.1,284.2 62.8,285.6 66.0,284.4 65.5,287.3 63.9,285.8 62.4,287.1 60.5,288.4 56.3,286.3 53.5,288.7 50.0,289.2 47.0,287.5 43.4,289.7 43.4,287.5 41.9,288.0 39.6,283.6 42.3,272.9 41.0,270.5 41.2,267.2 45.2,259.2 44.9,256.5 47.4,247.5 53.5,241.0 56.9,234.5 49.9,231.2 42.6,231.3 38.0,226.3 34.3,228.9 29.6,227.4 28.6,229.0 28.0,226.1 25.4,224.7 23.4,225.1 23.2,227.5 20.9,227.0 16.0,216.6 11.7,215.4 11.9,211.2 15.6,205.4 15.8,202.2 10.6,201.2 5.5,192.5 7.7,187.5 7.2,185.7 12.9,182.0 11.3,180.2 12.1,177.6 11.1,175.8 7.2,173.6 9.8,171.1 7.3,170.9 6.0,167.5 2.2,164.2 4.9,162.2 5.1,159.3 3.5,158.9 3.8,156.9 0.8,157.1 0.0,154.6 2.4,155.0 7.2,150.4 7.8,148.9 5.3,149.5 5.0,146.9 8.7,142.2 8.4,136.7 5.3,133.0 6.0,130.8 2.2,127.7 3.2,126.7 2.2,124.5 7.2,123.7 5.7,122.0 13.2,124.5 12.8,122.6 21.0,121.6 23.3,117.9 19.9,116.2 28.9,108.5 27.9,106.4 29.1,103.0 27.4,99.7 26.0,100.9 21.6,99.8 19.6,96.3 21.6,96.0 20.6,95.0 21.0,92.8 28.5,93.3 29.5,85.1 33.5,79.3 32.7,74.4 34.1,71.5 32.2,70.0 33.2,66.5 27.2,65.3 28.1,58.7 30.5,58.7 29.4,57.0 31.0,55.0 34.9,52.9 51.8,51.9 55.5,57.9 55.1,59.4 52.9,59.7 53.1,61.3 57.5,63.9 59.0,61.3 59.0,59.1 56.9,59.2 57.9,55.7 63.8,57.8 64.8,59.0 63.0,52.5 66.1,45.4 72.7,47.3 77.9,46.0 74.6,44.8 71.2,39.9 75.1,38.9 73.8,35.6 72.1,36.0 70.9,34.0 71.6,31.0 74.4,28.7 71.8,30.6 65.4,29.0 66.0,26.9 67.9,26.9 66.1,25.8 72.9,24.8 76.1,22.5 75.3,20.7 73.2,23.0 70.8,22.6 72.9,17.9 71.0,17.7 71.2,15.8 68.0,12.6 65.6,6.6 61.4,8.1 58.9,7.0 58.1,11.7 58.6,5.7 61.2,0.5ZM195.0,38.2 192.9,40.7 192.8,38.8 190.6,40.0 191.7,36.9 190.2,34.6 191.5,33.8 193.1,36.8 195.0,38.2ZM181.9,17.7 177.9,19.2 178.9,15.8 176.0,19.2 178.1,15.3 182.4,14.3 181.2,16.2 181.9,17.7ZM182.9,18.5 188.5,19.0 185.8,22.9 190.6,27.5 189.6,30.2 187.7,29.3 189.1,28.1 186.8,28.5 188.6,27.2 186.1,27.1 180.6,30.3 182.2,30.9 181.6,32.2 179.1,31.0 180.2,30.0 175.4,29.8 174.8,27.9 175.2,26.4 178.4,26.0 175.7,24.2 178.6,22.2 175.9,21.3 175.5,19.6 179.4,20.9 179.3,19.4 181.0,18.4 182.1,21.7 184.3,22.2 184.2,19.6 182.9,18.5ZM125.5,20.1 129.4,21.2 131.4,25.2 124.0,23.7 125.5,20.1ZM64.4,11.6 65.7,13.0 65.1,14.5 61.0,13.5 64.4,11.6Z"/>
+                <path class="route" d="M178.4,57.8 C170,48 160,46 152.2,48.6 C140,52 128,40 116.2,45.9"/>
+                <circle class="dot" cx="178.4" cy="57.8" r="4.2"/>
+                <circle class="dot" cx="152.2" cy="48.6" r="3.4"/>
+                <circle class="dot" cx="116.2" cy="45.9" r="3.4"/>
+                <circle class="dot dot--home" cx="131.6" cy="157.1" r="5.4"/>
+                <text x="229" y="80" text-anchor="end">Neubrandenburg</text>
+                <text x="152.2" y="36" text-anchor="middle">Güstrow</text>
+                <text x="108" y="51" text-anchor="end">Lübeck</text>
+                <text x="141" y="162">Weimar</text>
+              </svg>
+            </div>
+            <dl class="facts">
+              <div><dt>Geboren in</dt><dd>Neubrandenburg</dd></div>
+              <div><dt>Frühjahr 1945</dt><dd>Flucht nach Lübeck</dd></div>
+              <div><dt>Zu Hause in</dt><dd>Weimar</dd></div>
+              <div><dt>Schreibt</dt><dd>Notizen, Gedichte, Lebensbericht</dd></div>
+            </dl>
+            <a class="more" href="leben.html">Zum Lebensbericht</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rosen im englischen Garten: Weimarer Klassik trifft Romantik -->
+    <section class="rosengarten section" aria-labelledby="rosen">
+      <div class="grid">
+        <figure class="rosengarten__bild" data-reveal>
+          <div class="frame"><img src="img/elgood-rosengarten.webp" width="1400" height="1798" loading="lazy" alt="Aquarell: ein Rosenbogen über Gartenstufen, davor rosa und weiße Rosen, dahinter geschnittene Hecken"></div>
+          <figcaption>Rosenbogen in einem englischen Garten. Aquarell von George S. Elgood, aus Gertrude Jekylls „Some English Gardens“, 1904</figcaption>
+        </figure>
+        <div class="rosengarten__text" data-reveal>
+          <svg class="zier" aria-hidden="true" focusable="false"><use href="#zier"></use></svg>
+          <h2 id="rosen">Englische Rosen</h2>
+          <blockquote class="heidenroeslein">
+            <p class="verse">Sah ein Knab’ ein Röslein stehn,<br>Röslein auf der Heiden,<br>War so jung und morgenschön,<br>Lief er schnell, es nah zu sehn,<br>Sah’s mit vielen Freuden.<br>Röslein, Röslein, Röslein rot,<br>Röslein auf der Heiden.</p>
+            <footer>Johann Wolfgang von Goethe, Heidenröslein</footer>
+          </blockquote>
+          <p>Der Park an der Ilm in Weimar wurde nach englischem Vorbild angelegt: geschwungene Wege, freie Wiesen, Rosen an Bögen und Mauern. Solche Gärten sind das Bild dieser Seite.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Was hier wächst: die Rubriken als Beete. Rose für Ingrid, Salbei für Wolfgang. -->
+    <section class="rooms" aria-labelledby="beete">
+      <div class="rooms__grid">
+        <h2 id="beete" data-reveal="self">Was hier wächst</h2>
+        <figure class="room room--wide r1" data-reveal>
+          <a href="leben.html">
+            <div class="room__plate"><img src="img/rose-damascena.webp" width="800" height="1047" loading="lazy" alt="Weiße Damaszenerrose, Kupferstich von Redouté"></div>
+            <figcaption class="room__label"><strong>Lebensbericht</strong> <span>Ingrid</span></figcaption>
+          </a>
+        </figure>
+        <figure class="room r2" data-reveal>
+          <a href="texte.html#gedichte">
+            <div class="room__plate"><img src="img/rose-villosa.webp" width="800" height="1039" loading="lazy" alt="Rosa Wildrose mit Knospen, Kupferstich von Redouté"></div>
+            <figcaption class="room__label"><strong>Gedichte</strong> <span>Ingrid</span></figcaption>
+          </a>
+        </figure>
+        <figure class="room room--paper r3" data-reveal>
+          <a href="galerie.html">
+            <div class="room__plate"><img src="img/rosmarin-koehler.webp" width="800" height="1026" loading="lazy" alt="Rosmarin mit Blüten, Tafel aus Köhlers Medizinal-Pflanzen, 1887"></div>
+            <figcaption class="room__label"><strong>Galerie</strong> <span>Fotoalben</span></figcaption>
+          </a>
+        </figure>
+        <figure class="room r4" data-reveal>
+          <a href="texte.html#gedankenspiele">
+            <div class="room__plate"><img src="img/rose-cinnamomea.webp" width="800" height="1062" loading="lazy" alt="Zimtrose, Kupferstich von Redouté"></div>
+            <figcaption class="room__label"><strong>Gedankenspiele</strong> <span>Ingrid</span></figcaption>
+          </a>
+        </figure>
+        <figure class="room room--wide room--sage r5" data-reveal>
+          <a href="wolfgang.html">
+            <div class="room__plate"><img src="img/salbei-koehler.webp" width="800" height="1142" loading="lazy" alt="Echter Salbei, Tafel aus Köhlers Medizinal-Pflanzen, 1887"></div>
+            <figcaption class="room__label"><strong>Wolfgang Timpel</strong> <span>Leben</span></figcaption>
+          </a>
+        </figure>
+        <figure class="room r6" data-reveal>
+          <a href="aktuelles.html">
+            <div class="room__plate"><img src="img/rose-indica.webp" width="800" height="1083" loading="lazy" alt="Bengalische Rose, Kupferstich von Redouté"></div>
+            <figcaption class="room__label"><strong>Aktuelles</strong> <span>Ingrid</span></figcaption>
+          </a>
+        </figure>
+        <figure class="room room--sage r7" data-reveal>
+          <a href="wolfgang.html#literatur">
+            <div class="room__plate"><img src="img/salbei-blackwell.webp" width="800" height="1450" loading="lazy" alt="Blühende Pflanze mit lila Blütenähren, handkolorierte Tafel aus A Curious Herbal, 1737"></div>
+            <figcaption class="room__label"><strong>Literatur</strong> <span>Wolfgang</span></figcaption>
+          </a>
+        </figure>
+        <figure class="room room--wide room--sage r8" data-reveal>
+          <a href="wolfgang.html#autobiographie">
+            <div class="room__plate"><img src="img/krug.webp" width="900" height="1125" loading="lazy" alt="Schlanker Krug aus grauem Steinzeug, 14. Jahrhundert"></div>
+            <figcaption class="room__label"><strong>Autobiographie</strong> <span>Wolfgang</span></figcaption>
+          </a>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Aus den Fotoalben: versetzte Paare -->
+    <section class="album-wall" aria-labelledby="alben">
+      <div class="pair pair--a">
+        <figure class="r-3x4 w70" data-reveal>
+          <div class="frame"><img src="img/uploads/timpel52.jpg" width="412" height="640" loading="lazy" alt="Atelierfoto: zwei junge Männer stehend, zwei junge Frauen sitzend"></div>
+          <figcaption>Kindheit und Jugend: Atelierfoto, vier junge Leute</figcaption>
+        </figure>
+        <div class="stack-lower w84" data-reveal>
+          <div class="album-wall__head">
+            <h2 id="alben">Aus den Fotoalben</h2>
+            <p>Kindheit und Jugend, die Kriegszeit, gemeinsame Jahre, Restaurierung und Museum und Ingrids Zeichnungen.</p>
+          </div>
+          <figure class="r-5x4 pos-oben">
+            <div class="frame"><img src="img/uploads/p1000556.jpg" width="2000" height="1500" loading="lazy" alt="Ingrid und Wolfgang Timpel lächelnd am Meer"></div>
+            <figcaption>Gemeinsame Jahre: Ingrid und Wolfgang am Meer</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="pair pair--b">
+        <figure class="r-3x2 w100" data-reveal>
+          <div class="frame"><img src="img/uploads/timpel27.jpg" width="640" height="423" loading="lazy" alt="Schwarz-Weiß-Foto: vier junge Leute sitzen auf einer Wiese"></div>
+          <figcaption>Kindheit und Jugend: Rast auf der Wiese</figcaption>
+        </figure>
+        <figure class="r-4x5 w56" data-reveal>
+          <div class="frame"><img src="img/uploads/zeichnung-img-5993.jpg" width="1362" height="1800" loading="lazy" alt="Zeichnung: eine Sonnenblume"></div>
+          <figcaption>Zeichnungen: Sonnenblume</figcaption>
+        </figure>
+      </div>
+
+      <div class="pair pair--a2">
+        <figure class="r-3x4 w84" data-reveal>
+          <div class="frame"><img src="img/uploads/p1000792.jpg" width="1500" height="2000" loading="lazy" alt="Wolfgang Timpel lehnt im Frühlingswald an einem Baum"></div>
+          <figcaption>Wolfgang im Wald</figcaption>
+        </figure>
+        <figure class="r-5x4 w70" data-reveal>
+          <div class="frame"><img src="img/uploads/img-1475.jpg" width="2000" height="1500" loading="lazy" alt="Ingrid und Wolfgang Timpel sitzen nebeneinander am Holztisch"></div>
+          <figcaption>Gemeinsame Jahre: am Tisch</figcaption>
+          <a class="more" href="galerie.html">Alle Fotoalben ansehen</a>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Wolfgang: Aussage, Tabelle rechts -->
+    <section class="wolfgang section field-sage" aria-labelledby="wolfgang">
+      <div class="grid">
+        <h2 id="wolfgang" data-reveal="self">Wolfgang Timpel, 1935 bis 2024</h2>
+        <div class="wolfgang__body">
+          <div class="wolfgang__bio" data-reveal>
+            <p class="initial">Geboren in Weimar. Mit siebzehn kam er an das Museum für Ur- und Frühgeschichte Thüringens und lernte dort Restaurator. Später leitete er Ausgrabungen, unter anderem am Erfurter Dom, kümmerte sich um die Bodendenkmale Thüringens und wurde 1992 promoviert. Er starb am 3. Juni 2024.</p>
+            <a class="more" href="wolfgang.html">Mehr über Wolfgang Timpel</a>
+            <figure class="medaillon medaillon--salbei">
+              <div class="medaillon__rahmen"><div class="medaillon__oval"><img src="img/uploads/portraet-wolfgang.jpg" width="1200" height="1500" loading="lazy" alt="Wolfgang Timpel mit Hut und weißem Schnurrbart"></div></div>
+              <figcaption>Wolfgang Timpel</figcaption>
+            </figure>
+          </div>
+          <p class="table-name" aria-hidden="true">Schriften</p>
+          <div class="writings" data-reveal>
+            <table>
+              <caption class="visually-hidden">Schriften von Wolfgang Timpel, Auswahl</caption>
+              <tbody>
+                <tr><td class="year">1972</td><td class="title"><a href="https://www.db-thueringen.de/servlets/MCRFileNodeServlet/dbt_derivate_00040659/TLDA_225289415_Befestigungen_M%C3%BChlhausen.pdf">Die ur- und frühgeschichtlichen Befestigungen des Kreises Mühlhausen</a>, mit Paul Grimm<span class="where">Mühlhausen</span></td></tr>
+                <tr><td class="year">1975</td><td class="title">Ergebnisse archäologischer Untersuchungen auf der Hasenburg bei Haynrode<span class="where">Berlin</span></td></tr>
+                <tr><td class="year">1982</td><td class="title">Gommerstedt, ein hochmittelalterlicher Herrensitz in Thüringen<span class="where">Weimar</span></td></tr>
+                <tr><td class="year">1986</td><td class="title">Archäologische Untersuchungen auf der Wüstung Hugenworbis, mit Harald Reuße<span class="where">Eichsfelder Heimathefte</span></td></tr>
+                <tr class="group"><td class="year">1990</td><td class="title">Die mittelalterliche Keramik der Kyffhäuserburgen<span class="where">Berlin</span></td></tr>
+                <tr><td class="year">1995</td><td class="title">Die früh- und hochmittelalterliche Keramik im westlichen Thüringen<span class="where">Stuttgart</span></td></tr>
+                <tr><td class="year">1999</td><td class="title">Thüringer. Hauswerk und Handwerk<span class="where">Stuttgart</span></td></tr>
+                <tr><td class="year">2014</td><td class="title"><a href="https://zs.thulb.uni-jena.de/receive/jportal_jparticle_00324067">Der Stiftsberg in Heiligenstadt</a>, mit Roland Altwein<span class="where">Alt-Thüringen</span></td></tr>
+                <tr class="group"><td class="year">2014</td><td class="title">Corpus archäologischer Quellen des 7. bis 12. Jahrhunderts in Thüringen, mit Ines Spazier<span class="where">Langenweißbach</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt: Satz, Bild, zwei Wege -->
+    <section class="reach grid" aria-labelledby="erreichen" data-reveal>
+      <p class="reach__line">Sie möchten Ingrid Timpel schreiben oder eine Erinnerung teilen? Sie freut sich über Post.</p>
+      <figure class="reach__pic">
+        <div class="frame"><img src="img/roemisches-haus-detail.webp" width="700" height="700" loading="lazy" alt="Spaziergänger auf einer Holzbrücke im Park an der Ilm, 1799"></div>
+      </figure>
+      <div class="reach__ways">
+        <h2 id="erreichen">Wie erreichen Sie uns?</h2>
+        <ul>
+          <li><a href="kontakt.html">Eine Nachricht schreiben</a></li>
+          <li><a href="aktuelles.html">Aktuelles lesen</a></li>
+        </ul>
+        <p class="where">Ingrid Timpel, Weimar in Thüringen</p>
+      </div>
+    </section>
+  
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot__bg" data-zoom><img src="img/roemisches-haus.webp" width="2400" height="1591" loading="lazy" alt="Kolorierte Ansicht von 1799: das Römische Haus im Park an der Ilm in Weimar"></div>
+    <div class="site-foot__top">
+      <nav aria-label="Seiten">
+        <ul>
+          <li><a href="leben.html">Leben</a></li>
+          <li><a href="texte.html">Texte</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="site-foot__contact">
+        <p>Ingrid Timpel, Weimar</p>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="bildnachweis.html">Bildnachweis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p class="site-foot__name" translate="no" aria-hidden="true">Timpel</p>
+      <p class="site-foot__legal">© 2026 Ingrid Timpel. Im Bild: das Römische Haus im Park an der Ilm, 1799.</p>
+    </div>
+  </footer>
+</body>
+</html>

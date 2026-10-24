@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danke · Ingrid und Wolfgang Timpel</title>
+  <meta name="description" content="Ihre Nachricht ist angekommen.">
+  <meta name="theme-color" content="#EFE6D8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="vendor/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/sentient-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    document.documentElement.classList.add('js');
+    // Einladungs- und Passwort-Links aus Netlify Identity führen in den Editor
+    if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) location.replace('/admin/' + location.hash);
+  </script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <!-- Zierleiste im Stil der Weimarer Klassik: Linie, Rosette, Linie -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="zier" viewBox="0 0 160 16">
+      <path d="M0 8H62M98 8H160" fill="none" stroke="currentColor" stroke-width="1"/>
+      <g fill="currentColor" transform="translate(80 8)">
+        <ellipse rx="2.6" ry="6.4"/><ellipse rx="2.6" ry="6.4" transform="rotate(90)"/>
+        <ellipse rx="1.7" ry="4.6" transform="rotate(45)"/><ellipse rx="1.7" ry="4.6" transform="rotate(-45)"/>
+      </g>
+      <circle cx="70" cy="8" r="1.4" fill="currentColor"/><circle cx="90" cy="8" r="1.4" fill="currentColor"/>
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-head">
+    <a class="wordmark" translate="no" href="index.html" aria-label="Ingrid und Wolfgang Timpel, zur Startseite">Ingrid &amp; Wolfgang Timpel</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue">Menü</button>
+    <nav class="site-nav" id="hauptmenue" aria-label="Hauptmenü">
+      <ul>
+        <li><a href="leben.html">Leben</a></li>
+        <li><a href="texte.html">Texte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="aktuelles.html">Aktuelles</a></li>
+        <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+      </ul>
+      <a class="btn" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="legal grid" aria-labelledby="titel">
+      <div class="legal__body">
+        <h1 id="titel">Danke für Ihre Karte</h1>
+        <p class="page-hero__sub">Ihre Nachricht ist bei Ingrid Timpel angekommen. Sie meldet sich bei Ihnen.</p>
+        <a class="more" href="index.html">Zurück zur Startseite</a>
+      </div>
+    </section>
+  
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot__bg" data-zoom><img src="img/roemisches-haus.webp" width="2400" height="1591" loading="lazy" alt="Kolorierte Ansicht von 1799: das Römische Haus im Park an der Ilm in Weimar"></div>
+    <div class="site-foot__top">
+      <nav aria-label="Seiten">
+        <ul>
+          <li><a href="leben.html">Leben</a></li>
+          <li><a href="texte.html">Texte</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="site-foot__contact">
+        <p>Ingrid Timpel, Weimar</p>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="bildnachweis.html">Bildnachweis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p class="site-foot__name" translate="no" aria-hidden="true">Timpel</p>
+      <p class="site-foot__legal">© 2026 Ingrid Timpel. Im Bild: das Römische Haus im Park an der Ilm, 1799.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt · Ingrid und Wolfgang Timpel</title>
+  <meta name="description" content="Schreiben Sie Ingrid Timpel eine Karte.">
+  <meta name="theme-color" content="#EFE6D8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="vendor/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/sentient-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    document.documentElement.classList.add('js');
+    // Einladungs- und Passwort-Links aus Netlify Identity führen in den Editor
+    if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) location.replace('/admin/' + location.hash);
+  </script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <!-- Zierleiste im Stil der Weimarer Klassik: Linie, Rosette, Linie -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="zier" viewBox="0 0 160 16">
+      <path d="M0 8H62M98 8H160" fill="none" stroke="currentColor" stroke-width="1"/>
+      <g fill="currentColor" transform="translate(80 8)">
+        <ellipse rx="2.6" ry="6.4"/><ellipse rx="2.6" ry="6.4" transform="rotate(90)"/>
+        <ellipse rx="1.7" ry="4.6" transform="rotate(45)"/><ellipse rx="1.7" ry="4.6" transform="rotate(-45)"/>
+      </g>
+      <circle cx="70" cy="8" r="1.4" fill="currentColor"/><circle cx="90" cy="8" r="1.4" fill="currentColor"/>
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-head">
+    <a class="wordmark" translate="no" href="index.html" aria-label="Ingrid und Wolfgang Timpel, zur Startseite">Ingrid &amp; Wolfgang Timpel</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue">Menü</button>
+    <nav class="site-nav" id="hauptmenue" aria-label="Hauptmenü">
+      <ul>
+        <li><a href="leben.html">Leben</a></li>
+        <li><a href="texte.html">Texte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="aktuelles.html">Aktuelles</a></li>
+        <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+      </ul>
+      <a class="btn" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-hero grid" aria-labelledby="titel">
+      <h1 id="titel" data-reveal="self">Schreiben Sie eine Karte</h1>
+      <p class="page-hero__sub" data-reveal="self">Eine Frage, eine Erinnerung, ein Foto, das ins Album gehört: Schreiben Sie eine Karte. Sie kommt direkt bei Ingrid Timpel an.</p>
+      <figure class="page-hero__photo" data-drift="0.06">
+        <div class="frame"><img src="img/tiefurt.webp" width="1600" height="1000" fetchpriority="high" alt="Farbige Postkarte um 1900: Gruß aus Weimar, das efeuberankte Schloss Tiefurt"></div>
+        <figcaption>Gruß aus Weimar: Schloss Tiefurt, Postkarte um 1900</figcaption>
+      </figure>
+    </section>
+
+    <section class="postcard-wrap grid field-rose mt-block" aria-label="Postkarte an Ingrid Timpel">
+      <figure class="postcard-front" data-reveal="self">
+        <div class="frame"><img src="img/roemisches-haus.webp" width="2400" height="1591" loading="lazy" alt="Kolorierte Ansicht von 1799: Spaziergänger auf einer Holzbrücke vor dem Römischen Haus im Park an der Ilm"></div>
+      </figure>
+      <form class="postcard" name="kontakt" method="POST" action="danke.html" data-netlify="true" netlify-honeypot="webseite" data-reveal="self">
+        <input type="hidden" name="form-name" value="kontakt">
+        <p class="hp"><label>Bitte nicht ausfüllen <input name="webseite" tabindex="-1" autocomplete="off"></label></p>
+        <div class="postcard__write">
+          <div class="field">
+            <label for="nachricht">Ihre Nachricht</label>
+            <textarea id="nachricht" name="nachricht" required></textarea>
+          </div>
+        </div>
+        <div class="postcard__address" data-reveal>
+          <div class="stamp-wrap"><div class="stamp"><img src="img/rose-indica.webp" width="800" height="1083" alt="Briefmarke mit einer Rose"></div></div>
+          <p class="to">An Ingrid Timpel<br>Weimar</p>
+          <div class="field">
+            <label for="name">Ihr Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Ihre E-Mail-Adresse, damit Sie eine Antwort bekommen</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required>
+          </div>
+          <label class="consent"><input type="checkbox" name="einwilligung" required> <span>Ich bin einverstanden, dass meine Angaben verwendet werden, um meine Nachricht zu beantworten. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span></label>
+          <button class="btn" type="submit">Karte abschicken</button>
+          <p class="form-note" data-form-note hidden></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="card-back grid section" aria-labelledby="papier">
+      <figure class="card-back__fig" data-reveal>
+        <div class="frame"><img src="img/tiefurt-rueckseite.webp" width="1400" height="863" loading="lazy" alt="Unbeschriebene Rückseite einer Postkarte um 1900, gedruckt: Postkarte, An, in, Wohnung"></div>
+        <figcaption>Die Rückseite der Karte aus Tiefurt, um 1900</figcaption>
+      </figure>
+      <div class="card-back__text" data-reveal>
+        <h2 id="papier">Lieber auf Papier?</h2>
+        <p>Ingrid Timpel freut sich auch über einen Brief. Die Anschrift steht im <a href="impressum.html">Impressum</a>.</p>
+      </div>
+    </section>
+  
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot__bg" data-zoom><img src="img/roemisches-haus.webp" width="2400" height="1591" loading="lazy" alt="Kolorierte Ansicht von 1799: das Römische Haus im Park an der Ilm in Weimar"></div>
+    <div class="site-foot__top">
+      <nav aria-label="Seiten">
+        <ul>
+          <li><a href="leben.html">Leben</a></li>
+          <li><a href="texte.html">Texte</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="site-foot__contact">
+        <p>Ingrid Timpel, Weimar</p>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="bildnachweis.html">Bildnachweis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p class="site-foot__name" translate="no" aria-hidden="true">Timpel</p>
+      <p class="site-foot__legal">© 2026 Ingrid Timpel. Im Bild: das Römische Haus im Park an der Ilm, 1799.</p>
+    </div>
+  </footer>
+</body>
+</html>

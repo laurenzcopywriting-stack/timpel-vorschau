@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Texte · Ingrid und Wolfgang Timpel</title>
+  <meta name="description" content="Gedichte und Gedankenspiele von Ingrid Timpel.">
+  <meta name="theme-color" content="#EFE6D8">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="vendor/fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/sentient-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+  <script>
+    document.documentElement.classList.add('js');
+    // Einladungs- und Passwort-Links aus Netlify Identity führen in den Editor
+    if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) location.replace('/admin/' + location.hash);
+  </script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <!-- Zierleiste im Stil der Weimarer Klassik: Linie, Rosette, Linie -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="zier" viewBox="0 0 160 16">
+      <path d="M0 8H62M98 8H160" fill="none" stroke="currentColor" stroke-width="1"/>
+      <g fill="currentColor" transform="translate(80 8)">
+        <ellipse rx="2.6" ry="6.4"/><ellipse rx="2.6" ry="6.4" transform="rotate(90)"/>
+        <ellipse rx="1.7" ry="4.6" transform="rotate(45)"/><ellipse rx="1.7" ry="4.6" transform="rotate(-45)"/>
+      </g>
+      <circle cx="70" cy="8" r="1.4" fill="currentColor"/><circle cx="90" cy="8" r="1.4" fill="currentColor"/>
+    </symbol>
+  </svg>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-head">
+    <a class="wordmark" translate="no" href="index.html" aria-label="Ingrid und Wolfgang Timpel, zur Startseite">Ingrid &amp; Wolfgang Timpel</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue">Menü</button>
+    <nav class="site-nav" id="hauptmenue" aria-label="Hauptmenü">
+      <ul>
+        <li><a href="leben.html">Leben</a></li>
+        <li><a href="texte.html">Texte</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="aktuelles.html">Aktuelles</a></li>
+        <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+      </ul>
+      <a class="btn" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-hero grid" aria-labelledby="titel">
+      <h1 id="titel" data-reveal="self">Texte</h1>
+      <p class="page-hero__sub" data-reveal="self">Gedichte und Gedankenspiele von Ingrid Timpel: Verse aus dem Garten und Gedanken, die man weiterdenken kann.</p>
+      <nav class="subnav" data-reveal="self" aria-label="Auf dieser Seite">
+        <ul>
+          <li><a href="#gedichte">Gedichte</a></li>
+          <li><a href="#gedankenspiele">Gedankenspiele</a></li>
+        </ul>
+      </nav>
+      <figure class="page-hero__photo" data-drift="0.06">
+        <div class="frame"><img src="img/roemisches-haus.webp" width="2400" height="1591" fetchpriority="high" alt="Kolorierte Ansicht von 1799: Spaziergänger auf einer Holzbrücke vor dem Römischen Haus im Park an der Ilm"></div>
+        <figcaption>Das Römische Haus im Park an der Ilm, Weimar, 1799</figcaption>
+      </figure>
+    </section>
+
+    <section class="reading field-rose mt-section" id="gedichte" aria-labelledby="gedichte-titel">
+      <div class="grid" data-reveal>
+        <div class="reading__aside">
+          <h2 id="gedichte-titel">Gedichte</h2>
+          <p>Ingrid Timpels Verse, jedes mit einer Pflanze aus dem Garten der alten Bücher.</p>
+        </div>
+      </div>
+
+      <div class="grid mt-block">
+        <div class="poem" id="gefunden" data-reveal>
+          <div class="poem__text">
+            <h3>Gefunden</h3>
+            <p class="verse">Ich ging im Walde<br>So für mich hin,<br>Und nichts zu suchen,<br>Das war mein Sinn.</p>
+<p class="verse">Im Schatten sah ich<br>Ein Blümchen stehn,<br>Wie Sterne leuchtend,<br>Wie Äuglein schön.</p>
+<p class="verse">Ich wollt es brechen,<br>Da sagt’ es fein:<br>Soll ich zum Welken<br>Gebrochen sein?</p>
+<p class="verse">Ich grub’s mit allen<br>Den Würzlein aus,<br>Zum Garten trug ich’s<br>Am hübschen Haus.</p>
+<p class="verse">Und pflanzt es wieder<br>Am stillen Ort;<br>Nun zweigt es immer<br>Und blüht so fort.</p><p class="source">Johann Wolfgang von Goethe, 1813</p><p class="note-box"><mark class="offen">Satzprobe</mark> Dieses Gedicht zeigt, wie Ihre Verse gesetzt werden. Bitte löschen Sie es im Editor, sobald Ihr erstes Gedicht da ist.</p>
+          </div>
+          <figure class="poem__plate">
+            <div class="frame"><img src="img/rose-damascena.webp" width="800" height="1047" loading="lazy" alt="Weiße Damaszenerrose, Kupferstich aus Redoutés „Les Roses“"></div>
+            <figcaption>Damaszenerrose, Redouté, „Les Roses“, 1817</figcaption>
+          </figure>
+        </div>
+        <div class="poem poem--flip" id="mondnacht" data-reveal>
+          <div class="poem__text">
+            <h3>Mondnacht</h3>
+            <p class="verse">Es war, als hätt’ der Himmel<br>Die Erde still geküßt,<br>Daß sie im Blütenschimmer<br>Von ihm nun träumen müßt’.</p>
+<p class="verse">Die Luft ging durch die Felder,<br>Die Ähren wogten sacht,<br>Es rauschten leis die Wälder,<br>So sternklar war die Nacht.</p>
+<p class="verse">Und meine Seele spannte<br>Weit ihre Flügel aus,<br>Flog durch die stillen Lande,<br>Als flöge sie nach Haus.</p><p class="source">Joseph von Eichendorff, 1837</p><p class="note-box"><mark class="offen">Satzprobe</mark> Dieses Gedicht zeigt, wie Ihre Verse gesetzt werden. Bitte löschen Sie es im Editor, sobald Ihr erstes Gedicht da ist.</p>
+          </div>
+          <figure class="poem__plate">
+            <div class="frame"><img src="img/rose-villosa.webp" width="800" height="1039" loading="lazy" alt="Rosa Wildrose mit Knospen, Kupferstich aus Redoutés „Les Roses“"></div>
+            <figcaption>Apfelrose, Redouté, „Les Roses“, 1817</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="reading" id="gedankenspiele" aria-labelledby="gedanken-titel">
+      <div class="grid" data-reveal>
+        <div class="reading__aside">
+          <h2 id="gedanken-titel">Gedankenspiele</h2>
+          <p>Kurze Gedanken, aufgeschrieben, wenn sie kommen. Manche sind eine Frage, manche eine Antwort.</p>
+        </div>
+        <p class="note-box reading__main"><mark class="offen">Satzprobe</mark> Die Sätze von Goethe zeigen, wie Ihre Gedankenspiele gesetzt werden. Bitte löschen Sie sie im Editor, sobald Ihre eigenen da sind.</p>
+      </div>
+      <div class="grid mt-block">
+        <div class="thoughts">
+          <blockquote class="thought" id="edel-sei-der-mensch" data-reveal="self">
+            <p>Edel sei der Mensch, hilfreich und gut!</p>
+            <footer>Goethe, Das Göttliche, 1783</footer>
+          </blockquote>
+          <blockquote class="thought" id="fremde-sprachen" data-reveal="self">
+            <p>Wer fremde Sprachen nicht kennt, weiß nichts von seiner eigenen.</p>
+            <footer>Goethe, Maximen und Reflexionen</footer>
+          </blockquote>
+          <blockquote class="thought" id="wissen-und-tun" data-reveal="self">
+            <p>Es ist nicht genug zu wissen, man muß auch anwenden; es ist nicht genug zu wollen, man muß auch tun.</p>
+            <footer>Goethe, Maximen und Reflexionen</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="site-foot__bg" data-zoom><img src="img/roemisches-haus.webp" width="2400" height="1591" loading="lazy" alt="Kolorierte Ansicht von 1799: das Römische Haus im Park an der Ilm in Weimar"></div>
+    <div class="site-foot__top">
+      <nav aria-label="Seiten">
+        <ul>
+          <li><a href="leben.html">Leben</a></li>
+          <li><a href="texte.html">Texte</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="aktuelles.html">Aktuelles</a></li>
+          <li><a href="wolfgang.html">Wolfgang Timpel</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="site-foot__contact">
+        <p>Ingrid Timpel, Weimar</p>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="bildnachweis.html">Bildnachweis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p class="site-foot__name" translate="no" aria-hidden="true">Timpel</p>
+      <p class="site-foot__legal">© 2026 Ingrid Timpel. Im Bild: das Römische Haus im Park an der Ilm, 1799.</p>
+    </div>
+  </footer>
+</body>
+</html>
