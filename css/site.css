@@ -182,6 +182,7 @@ mark.offen { background: #F5E6A8; color: var(--ink); padding: 0 .2em; }
 .site-nav ul { display: flex; gap: clamp(14px, 2vw, 32px); margin: 0; padding: 0; list-style: none; }
 .site-nav ul a {
   display: inline-block;
+  white-space: nowrap;
   padding-block: 10px;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -191,7 +192,7 @@ mark.offen { background: #F5E6A8; color: var(--ink); padding: 0 .2em; }
 .menu-toggle { display: none; }
 @media (max-width: 480px) { .wordmark { font-size: var(--step-small); letter-spacing: 0.1em; white-space: normal; max-width: 15em; } .site-head { gap: 12px; } }
 
-@media (max-width: 960px) {
+@media (max-width: 1120px) {
   .menu-toggle {
     display: inline-flex;
     align-items: center;
